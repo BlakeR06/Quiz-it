@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-it: Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alert_Container">
+        <div id="alert_Box">
+            <div id="alert_Container_Text"></div>
+            <div class="button1" id="alert_Close_Button" onclick="CloseAlert()">Close</div>
+        </div>
+    </div>
+
+    <div id="loading_Container">
+        <div class="loading_Box">
+            <div class="loading_Text">Loading</div>
+            <div class="loading_Dot" style="animation-delay: 0s;"></div>
+            <div class="loading_Dot" style="animation-delay: 0.2s;"></div>
+            <div class="loading_Dot" style="animation-delay: 0.4s;"></div>
+        </div>
+    </div>
+
+    <div class="sign_Up_Login_Image">
+        <div class="sign_Up_Login_Page_Top_Bar">
+            <div class="title">Quiz-it</div>
+            <div class="button2 sign_Up_Login_Page_Home_Button" onclick="window.location.href = 'frontPage.html'">Home</div>
+        </div>
+        <div class="sign_Up_Login_Container">
+            <div class="sign_Up_Login_Box_Title">Sign Up</div>
+            <form action="https://script.google.com/macros/s/AKfycbxXcdWAqXaiAaPiura4rZgQl2_sXMWZi4NtWVJl3cya11pNXQOAwyn1M3zyaetfs_Ie/exec" method="post" id="sign_Up_Form">
+                <div class="center">
+                    <input name="Sign_Up_Username" type="text" class="username_Input" placeholder="Username" required>
+                    <div class="user_Icon"></div>
+                </div>
+                <div class="password_Input_Container">
+                    <input name="Sign_Up_Password" type="password" class="password_Input" placeholder="Password" required>
+                    <div class="lock_Icon"></div>
+                </div>
+                <div class="center">
+                    <button class="button1" id="create_Account_Button" type="submit">Create Account</button>
+                </div>
+            </form>
+            <div class="center">
+                <div class="white_Text">Already have an account? <a href="LoginPage.html" class="blue_Text">Login</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Sign_Up.js"></script>
+</html>

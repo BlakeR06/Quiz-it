@@ -1,0 +1,390 @@
+body{
+    margin: 0;
+    overflow-y: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#alert_Container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 2;
+    position: absolute;
+    display: none;
+}
+
+#alert_Box{
+    min-width: 200px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid rgb(111, 111, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alert_Container_Text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#alert_Close_Button{
+    margin-left: 20px;
+}
+
+#loading_Container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.loading_Box{
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid rgb(111, 111, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading_Text{
+    color: rgb(111, 111, 255);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.loading_Dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(111, 111, 255);
+    margin: 20px 3px 0 3px;
+    animation-name: loading_Dot_Animation;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes loading_Dot_Animation{
+    0%{
+        
+    }
+    30%{
+        transform: translateY(-10px);
+    }
+    60%{
+        transform: translateY(0px);
+    }
+    100%{
+        
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.button1{
+    background-color: rgb(111, 111, 255);
+    color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+}
+
+.button2{
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.small_White_Text{
+    color: white;
+    font-size: 20px;
+}
+
+.white_Text{
+    color: white;
+}
+
+.blue_Text{
+    color: rgb(111, 111, 255);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.black_Header_Text{
+    font-size: 30px;
+}
+
+.side_by_side_flexbox{
+    display: flex;
+    align-items: center;
+}
+
+/*FRONT PAGE---------------------------*/
+
+.front_Page_Image{
+    background-image: url('FrontPageImg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    padding: 20px;
+}
+
+.title{
+    font-size: 50px;
+    color: rgb(111, 111, 255);
+    font-weight: bold;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+}
+
+.front_Page_Top_Bar{
+    display: flex;
+}
+
+.front_Page_Nav_Buttons_Container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#sign_Up_Button{
+    margin-right: 20px;
+}
+
+.front_Page_text{
+    width: 300px;
+    margin-top: 100px;
+}
+
+#learn_More_Button{
+    padding: 7px 15px;
+    margin-top: 40px;
+}
+
+/*LEARN MORE PAGE--------------------------*/
+
+.learn_More_Page_Img{
+    background-image: url('LearnMoreImage.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    padding: 20px;
+}
+
+.learn_More_Page_Top_Bar{
+    display: flex;
+}
+
+.learn_More_Page_Nav_Buttons_Container{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.learn_More_Page_Text{
+    width: 500px;
+    margin-top: 40px;
+}
+
+.learn_More_Page_Home_Button{
+    padding: 7px 25px;
+    margin-top: 40px;
+}
+
+/*SIGN UP AND LOGIN--------------------------*/
+.sign_Up_Login_Image{
+    background-image: url('signUpLoginImg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100svh;
+    padding: 20px;
+}
+
+.sign_Up_Login_Page_Top_Bar{
+    display: flex;
+    align-items: center;
+}
+
+.sign_Up_Login_Page_Home_Button{
+    margin-left: auto;
+    padding: 5px 15px;
+}
+
+.sign_Up_Login_Container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+.sign_Up_Login_Box_Title{
+    background-color: rgb(111, 111, 255);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    padding: 10px 30px;
+    border: 1px solid white;
+}
+
+.username_Input{
+    background-color: rgb(111, 111, 255, 0);
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 40px 20px 20px 20px;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    padding-left: 45px;
+}
+.username_Input::placeholder{
+    color: white;
+    font-size: 17px;
+    padding-left: 0px;
+}
+.username_Input:focus{
+    outline: none;
+}
+.user_Icon{
+    background-image: url('UserIcon.png');
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    margin: 20px;
+}
+.lock_Icon{
+    background-image: url('LockIcon.png');
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -20px;
+    left: 5px;
+}
+
+.password_Input_Container{
+    padding: 0 20px;
+    position: relative;
+}
+
+.password_Input{
+    background-color: rgb(111, 111, 255, 0);
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0 40px 0;
+    padding-left: 45px;
+    color: white;
+    font-size: 17px;
+}
+.password_Input::placeholder{
+    color: white;
+    font-size: 17px;
+    padding-left: 0px;
+}
+.password_Input:focus{
+    outline: none;
+}
+.password_Input::-ms-reveal,
+.password_Input::-webkit-credentials-auto-fill-button {
+    display: none;
+}
+
+#create_Account_Button, #login_Button{
+    margin-bottom: 15px;
+}
+/*SIGN UP AND LOGIN--------------------------*/
+
+/*HOME STYLE--------------------------*/
+.home_Top_Bar{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.home_Top_Bar_Nav_Button_Container{
+    display: flex;
+    color: rgb(111, 111, 255);
+    margin: 0 20px 0 auto;
+    font-size: 20px;
+}
+
+.home_Top_Bar_Nav_Button{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.current_Home_Section{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.your_Sets_Container{
+    width: 100%;
+    min-height: 100svh;
+    background-color: rgb(230, 230, 230);
+    font-weight: bold;
+}
+/*HOME STYLE--------------------------*/
